@@ -82,7 +82,7 @@ header .inner .main_menu li:hover .material-symbols-outlined{
     transform: rotate(180deg);   
 }
 
-
+/* 밑에 내려오는 메뉴 */
 .main_menu .item .item__contents {
     position: fixed;
     width: 100%;
@@ -104,7 +104,7 @@ header .inner .main_menu li:hover .material-symbols-outlined{
     height: 100%;
 }
 
-
+/* 서브 메뉴 안 글들 */
 header .inner .main_menu .item .item__contents .item__contents__menu .inner p {
     font-size: 15px;
     padding: 30px 350px 0 0;
