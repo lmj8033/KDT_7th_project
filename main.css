@@ -1,0 +1,171 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+/* COMMON */
+body {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 15px;
+    background: linear-gradient(45deg,#c4b7fe,#eeeafe);
+    height: 3000px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    width: 100%;
+}
+
+header:hover {
+    background-color: white;
+}
+
+header .inner {
+    display: flex;
+    position: relative;
+    width: 1200px;
+    height: 70px;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+/* LOGO */
+header .inner .logo {
+    display: flex;
+    position: absolute;
+    width: 105px;
+    height: 32px;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+}
+
+/* MAIN MENU */
+header .inner .main_menu {  
+    display: flex;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 150px;
+}
+
+.main_menu .item .item__name {
+    margin-top: 20px;
+    padding: 10px 16px;
+    font-size: 17px;
+}
+
+.main_menu .item .item__name:hover {
+    background-color: #c8c8c8;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 48,
+    'opsz' 20;
+    font-size: 13px;
+    transition: 0.6s;
+    bottom: 0;
+    margin: auto;
+    left: 60px;
+}
+
+header .inner .main_menu li:hover .material-symbols-outlined{
+    transform: rotate(180deg);   
+}
+
+
+.main_menu .item .item__contents {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    display: none;
+}
+
+.main_menu .item:hover .item__contents {
+    display: block;
+}
+
+.main_menu .item .item__contents .item__contents__menu {
+    background-color: white;
+    padding: 0;
+    width: 100%;
+}
+
+.main_menu .item .item__contents .item__contents__menu .inner {
+    height: 100%;
+}
+
+
+header .inner .main_menu .item .item__contents .item__contents__menu .inner p {
+    font-size: 15px;
+    padding: 30px 350px 0 0;
+}
+
+header .inner .main_menu .item .item__contents .item__contents__menu .inner li>ul {
+    width: 290px;
+    padding: 20px 30px;
+} 
+
+header .inner .main_menu .item .item__contents .item__contents__menu .inner li>ul:hover {
+    background-color: #f6efefc8;
+    cursor: pointer;
+}
+
+
+header .inner .main_menu .item .item__contents .item__contents__menu .inner li>ul li {
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+header .inner .main_menu .item .item__contents .item__contents__menu .inner li>ul span {
+    color: rgb(163, 162, 162);
+    font-size: 14px;
+}
+
+/* BUTTON */
+header .inner .header__btn {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    margin-top: 30px;
+    height: 35px;
+
+}
+
+header .inner .header__btn .header__btn__login a {
+    padding: 10px;
+    margin-right: 8px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: black;
+}
+
+header .inner .header__btn .header__btn__login:hover {
+    text-decoration: underline;
+}
+
+header .inner .header__btn .header__btn__question a {
+    padding: 8px;
+    margin-right: 8px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 3px;
+    color: white;
+}
+
+header .inner .header__btn .header__btn__question:hover {
+    opacity: 70%;
+}
+
+
+
